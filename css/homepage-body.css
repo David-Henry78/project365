@@ -1,0 +1,566 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+body{
+    font-family:  'Segoe UI Regular','Segoe UI Bold',"Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+main{
+    margin-left: auto;
+    margin-right: auto;
+    /* border: 3px solid; */
+    max-width: 100rem;
+}
+.carousel{
+    position: relative;
+    margin: 0 auto;
+    height: 37.5rem;
+    width: 100rem;
+    text-align: center;
+    overflow: hidden;
+    cursor: pointer;
+}
+.carousel__image{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.carousel__track-container{
+    position: relative;
+    height: 100%;
+}
+.carousel__track{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    /* position: relative; */
+    height: 100%;
+    transition: transform 1s ease;
+}
+.carousel__slide{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+}
+.carousel__button{
+    display: none;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: white;
+    border: 0;
+    border-radius: 50%;
+    padding: .8rem .88rem;
+    z-index: 1;
+    cursor: pointer;
+    text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 1.5px 3px 1px, rgba(0, 0, 0, 0.21) 0px 0px 1px 0px;
+
+}
+.carousel:hover .carousel__button{
+    display: block;
+}
+
+.carousel__button--left{
+   left: .03rem;
+}
+.carousel__button--right{
+    right: -.03rem;
+ }
+.carousel__button img{
+    width: 1rem;
+    display: inline-block;
+    text-align: center;   
+}
+.carousel__nav{
+    position: relative;
+    bottom: 0rem;
+    top: -2.5rem;
+    display: inline-block;
+    margin: 0 auto;
+    text-align: end !important;
+    padding: 0rem 0;
+    padding-right: .9rem;
+}
+.carousel__indicator-pause{
+    position: relative;
+    padding: .8rem 1rem;
+    top: -.45rem;
+    right: -1.82rem;
+    color: rgb(0, 0, 0);
+    border: 0;
+    font-size: .81rem;
+    background-color: transparent;
+    cursor: pointer;
+}
+.carousel__indicator-pause:hover{
+    background-color: black;
+    color: white;
+}
+.carousel__indicator{
+    position: relative;
+    right: .001rem;
+    vertical-align: .6rem;
+    text-align: center;
+    border: 0;
+    border-radius: 50%;
+    width: .41rem;
+    height: .41rem;
+    background: rgb(0, 0, 0, 0);
+    border: 1px solid black;
+    margin: 0 .1rem;
+    cursor: pointer;
+}
+.carousel__indicator.current-slide{
+    background: rgb(0, 0, 0, .75);
+}
+.carousel__indicator:not(.current-slide):hover{
+    background: rgb(0, 0, 0, .3);
+}
+
+
+.carousel__slide.first-block-2 h2{
+    font-family: 'Segoe UI Bold';
+    font-weight: 100;
+    font-size: 2.1125rem;
+    line-height: 2.6rem;
+    margin-bottom: 1rem;
+    max-width: 85%;
+ }
+ .carousel__slide.first-block-2 h4{
+    margin-bottom: 1.25rem;
+    font-weight: 400;
+ }
+ .carousel__slide.first-block-2 nav{
+    position: absolute; 
+    right: 0rem;
+    left: -53rem;
+    top: 3.5rem;
+    bottom: 0;
+    text-align: left;
+    min-width: 35rem;
+    max-width: 35%;
+    margin: 0 auto;
+    font-size: .95rem;
+    /* transition: transform 1s ease-in; */
+    animation-timing-function: ease-out;
+    animation: moveleft ;
+}
+@keyframes moveleft{
+    from{right: -10rem;}
+}
+.carousel__slide.first-block-2 nav ul li{
+    display: inline-block;
+    background-color: black;
+    margin-right: 1.2rem;
+    margin-bottom: 1.12rem;
+    overflow: visible;
+}
+.carousel__slide.first-block-2 nav ul a{
+    width: 7rem;
+    padding-right: .5rem !important;
+    padding: 0.55rem 0rem;
+    text-decoration: none;
+    text-align: center;
+    display: inline-block;
+    color: white;
+    font-weight: 900;
+    overflow: visible;
+}
+
+.carousel__slide.first-block-1 h2{
+    font-family: 'Segoe UI Bold';
+    font-weight: 100;
+    font-size: 2.1125rem;
+    line-height: 2.6rem;
+    margin-bottom: 1rem;
+    max-width: 85%;
+ }
+ .carousel__slide.first-block-1 h4{
+    margin-bottom: 1.25rem;
+    font-weight: 400;
+ }
+ .carousel__slide.first-block-1 nav{
+    position: absolute; 
+    right: 0rem;
+    left: -53rem;
+    top: 14rem;
+    bottom: 0;
+    text-align: left;
+    min-width: 35rem;
+    max-width: 36%;
+    margin: 0 auto;
+    font-size: .95rem;
+    animation-timing-function: ease-out;
+    animation: moveright .5s normal;
+}
+
+@keyframes moveright{
+    from{right: 10rem;}
+}
+.carousel__slide.first-block-1 nav ul li{
+    display: inline-block;
+    margin-bottom: 1.12rem;
+    overflow: visible;
+}
+.carousel__slide.first-block-1 nav ul a{
+    /* display: inline-block; */
+    width: 10.5rem;
+    padding-right: .5rem !important;
+    padding: 0.6rem 0rem;
+    text-decoration: none;
+    text-align: center;
+    display: inline-block;
+    font-weight: 900;
+    overflow: visible;
+}
+.carousel__slide .black-link-bg.for-6{
+    background: black;
+    color: white;
+}
+ .carousel__slide .for-1{
+    color: black;
+}
+.for-1::after{
+    content: " ";
+    border: solid rgb(0, 0, 0);
+    border-width: 0 1.6px 1.6px 0;
+    display: inline-block;
+    padding: 3.5px;
+    margin-left: .3rem;
+    vertical-align: 1.6px;
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+}
+.for-6::after{
+    content: " ";
+    border: solid rgb(255, 255, 255);
+    border-width: 0 1.6px 1.6px 0;
+    display: inline-block;
+    padding: 3.5px;
+    margin-left: .5rem;
+    vertical-align: 1.6px;
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+}
+.black-link-bg.shop-now::after{
+    content: " ";
+    border: solid rgb(255, 255, 255);
+    border-width: 0 1.6px 1.6px 0;
+    display: inline-block;
+    padding: 3.5px;
+    margin-left: .5rem;
+    vertical-align: 1.6px;
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+}
+
+.products-and-deals-block{
+    max-width: calc(100rem + 10%);
+    height: 35rem;
+    /* border: 3px solid; */
+}
+
+.products{
+    margin: 0 auto;
+    margin-top: 4rem;
+    width: fit-content;
+}
+.products ul{
+   margin-bottom: 1.5rem;
+}
+.products li{
+    list-style: none;
+    display: inline-block;
+    margin: -.2rem;
+    /* border: 3px black solid; */
+    vertical-align: top;
+    cursor: pointer;
+}
+.products li a{
+    text-decoration: none;
+    /* border: 3px black solid; */
+    padding: .5rem;
+    display: inline-block;
+    text-align: center;
+}
+.products li a p{
+    text-align: center;
+    text-indent: .5rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    font-weight: bold;
+    font-size: .85rem;
+    max-width: 8rem;
+    color: black;
+}
+.products li a img{
+    text-align: center;
+    margin-bottom: .5rem;
+}
+
+.deals{
+    float: left;
+    box-sizing: border-box;
+    width: 25.375rem;
+    padding-left: .75rem;
+    padding-top: 2.2rem;
+    padding-bottom: 2.2rem;
+    border: 0px;
+    margin-left: -.6rem;  
+    /* border: 3px black solid; */
+    vertical-align: top;
+}
+
+.deals img{
+    min-width: 23.875rem;
+    height: auto;
+    border: 0;
+    cursor: pointer;
+}
+.deals div{
+    box-sizing: border-box;
+    cursor: pointer;
+    width: 24rem;
+    border: 0px;
+    margin-left: 0rem;
+    margin-right: 0rem;
+    /* border: 1px solid; */
+}
+.deals p{
+    font-size: .96rem;
+    margin-bottom: 1.5rem;
+    zoom: 1;
+}
+.deals h3{
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    font-size: 1.04rem;
+}
+.deals-links{
+    display: inline-block;
+}
+.deals-links a{
+    text-decoration: none;
+    color: #0067b8;;
+    font-weight: 600;
+    font-size: .9rem;
+    margin-left: .5rem;
+}
+.middle-picture-full {
+    position: relative;
+    margin: 0 auto;
+}
+.middle-picture-full img{
+    margin: 0 auto;
+    object-fit: cover;
+}
+
+.middle-picture-full h2{
+    font-family: 'helvetica';
+    font-weight: 100;
+    font-size: 2.1125rem;
+    line-height: 2.6rem;
+    margin-bottom: 1rem;
+    max-width: 85%;
+ }
+ .middle-picture-full h4{
+    margin-bottom: 1.45rem;
+    font-weight: 400;
+ }
+ .middle-picture-full nav{
+    position: absolute; 
+    right: 0rem;
+    left: -53rem;
+    top: 4rem;
+    bottom: 0;
+    text-align: left;
+    min-width: 35rem;
+    max-width: 35%;
+    margin: 0 auto;
+    font-size: .95rem;
+    color: white;
+    font-family: 'helvetica';
+}
+.middle-picture-full nav ul li{
+    display: inline-block;
+    background-color: white;
+    margin-right: 1.2rem;
+    margin-bottom: 1.12rem;
+    overflow: visible;
+}
+.middle-picture-full nav ul a{
+    width: 12.5rem;
+    padding-right: .8rem !important;
+    padding: 0.6rem 0rem;
+    text-decoration: none;
+    text-align: center;
+    display: inline-block;
+    color: black;
+    font-weight: 900;
+    overflow: visible;
+}
+.for-business{
+    margin: 2rem 0rem 30rem 0rem;
+}
+.for-business-info{
+    float: left;
+    box-sizing: border-box;
+    width: 25.375rem;
+    padding-left: .75rem;
+    padding-top: 2.2rem;
+    padding-bottom: 2.2rem;
+    border: 0px;
+    margin-left: -.6rem;
+    /* border: 3px black solid; */
+    vertical-align: top;
+    
+}
+.for-business-info div{
+    box-sizing: border-box;
+    cursor: pointer;
+    width: 24rem;
+    border: 0px;
+    margin-left: 0rem;
+    margin-right: 0rem;
+}
+
+.for-business-links{
+    display: inline-block;
+}
+.for-business-links a{
+    text-decoration: none;
+    color: #0067b8;;
+    font-weight: 600;
+    font-size: .9rem;
+    margin-left: 1rem;
+}
+.for-business-info img{
+    min-width: 23.875rem;
+    height: auto;
+    border: 0;
+    cursor: pointer;
+}
+.for-business-info p{
+    font-size: .96rem;
+    margin-bottom: 1.5rem;
+    zoom: 1;
+}
+.for-business-info h3{
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    font-size: 1.04rem;
+}
+
+.carousel__slide.second-block-1 h2{
+    font-family: 'Segoe UI Bold';
+    font-weight: 100;
+    font-size: 2.1125rem;
+    line-height: 2.6rem;
+    margin-bottom: 1rem;
+ }
+ .carousel__slide.second-block-1 h4{
+    margin-bottom: 1.25rem;
+    font-weight: 400;
+ }
+ .carousel__slide.second-block-1 nav{
+    position: absolute; 
+    right: 0rem;
+    left: -53rem;
+    top: 14rem;
+    bottom: 0;
+    text-align: left;
+    min-width: 33rem;
+    max-width: 33%;
+    margin: 0 auto;
+    font-size: .95rem;
+}
+.carousel__slide.second-block-1 nav ul li{
+    display: inline-block;
+    margin-bottom: 1.12rem;
+    overflow: visible;
+}
+.carousel__slide.second-block-1 nav ul a{
+    /* display: inline-block; */
+    width: 8rem;
+    padding-right: .5rem !important;
+    padding: 0.6rem 0rem;
+    text-decoration: none;
+    text-align: center;
+    display: inline-block;
+    font-weight: 900;
+    overflow: visible;
+}
+.carousel__slide .black-link-bg{
+    background: black;
+    color: white;
+}
+
+
+.carousel__slide.second-block-2 h2{
+    font-family: 'Segoe UI Bold';
+    font-weight: 100;
+    font-size: 2.1125rem;
+    line-height: 2.6rem;
+    margin-bottom: 1rem;
+    max-width: 85%;
+ }
+ .carousel__slide.second-block-2 h4{
+    margin-bottom: 1.25rem;
+    font-weight: 400;
+ }
+ .carousel__slide.second-block-2 nav{
+    position: absolute; 
+    right: -55rem;
+    left: 0rem;
+    top: 14rem;
+    bottom: 0;
+    text-align: left;
+    min-width: 33rem;
+    max-width: 33%;
+    margin: 0 auto;
+    font-size: .95rem;
+    /* z-index: 1; */
+}
+.carousel__slide.second-block-2 nav ul li{
+    display: inline-block;
+    /* background-color: black; */
+    margin-bottom: 1.12rem;
+    overflow: visible;
+}
+.carousel__slide.second-block-2 nav ul a{
+    /* display: inline-block; */
+    width: 8rem;
+    padding-right: .5rem !important;
+    padding: 0.6rem 0rem;
+    text-decoration: none;
+    text-align: center;
+    display: inline-block;
+    /* color: white; */
+    font-weight: 900;
+    overflow: visible;
+}
+.carousel__slide .black-link-bg{
+    background: black;
+    color: white;
+}
+
+.socials{
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    color: rgb(3, 3, 3, .6);
+    font-size: .9rem;
+}
+.socials  span:nth-of-type(2){
+    display:inline-block;
+    vertical-align: middle;
+}
+.socials li{
+    display: inline-block; 
+    margin-left: .5rem;
+}
+.socials img{
+    width: 2.1rem;
+}

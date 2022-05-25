@@ -1,0 +1,73 @@
+
+.gift-ideas-text{
+    background-color: #0067b8;;
+    font-size: .8rem;
+    letter-spacing: .03rem;
+}
+.gift-ideas-text a{
+    display: block;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    width: 100%;
+    padding: .83rem;
+}
+.microsoft-header{
+    font-size: .8rem;
+    color: rgb(0, 0, 0, .3);
+}
+.microsoft-header a {
+    color: rgb(0, 0, 0, .8);
+}
+.microsoft-header nav {
+    color: rgb(0, 0, 0, .7);
+    margin-top: .3rem;
+}
+.left li{
+    list-style: none;
+    display: inline-block;
+    padding: 1rem .5rem 1rem 0rem;
+}
+.left li a{
+    text-decoration: none;
+    padding: 1.5rem .6rem 1.5rem .6rem;
+    /* border: 3px solid; */
+}
+.left{
+    margin-left: .5rem;
+    display: inline-block;
+    /* border: 3px solid; */
+    width: 60rem;
+}
+.microsoft-logo {
+    display: inline-block;
+}
+.microsoft-logo a{
+    padding: .9rem .5rem .8rem 1.5rem;
+    /* border: 3px solid; */
+}
+.microsoft-logo img{
+   padding-bottom: .5rem;
+   width: 6.8rem;  
+   margin-left: -1rem;
+   vertical-align: middle;
+}
+.right li{
+    list-style: none;
+    display: inline-block;
+    padding: 1rem 1rem 1rem 1rem;
+}
+.right li a{
+    text-decoration: none;
+}
+.right{
+    display: inline-block; 
+}
+select{
+    border: none;
+    background-color: unset;
+    text-align: end;
+    cursor: pointer;
+    font-size: .82rem;
+    color: rgb(0, 0, 0, .8);
+}

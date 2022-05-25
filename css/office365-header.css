@@ -1,0 +1,153 @@
+.hybrid-work-text {
+    position: relative;
+    background-color: #0067b8;
+    font-size: 1rem;
+    padding-bottom: .87rem;
+    letter-spacing: .01rem;
+  }
+   
+  .hybrid-work-text > a {
+    text-decoration: none;
+    position: absolute;
+    left: 0; 
+    bottom: 0; 
+    top: 0;
+    right: 0;
+    color: white;
+    padding-top: .87rem;
+    font-weight: 100;
+    font-family: 'Segoe UI Bold';
+    margin-left: -6rem;
+  }
+   
+  .inner-container {
+    position: relative;
+    pointer-events: none;
+    z-index: 10;
+    padding-top: .87rem;
+  }
+   
+  .inner-container a {
+    pointer-events: all;
+    text-decoration: none;
+    color: white;
+    margin-left: 24rem;
+    font-weight: 600; 
+  }
+
+.microsoft-header{
+    font-size: .82rem;
+    color: rgb(0, 0, 0, .3);
+    text-align: center;
+    margin-top: -.4rem;
+}
+.microsoft-header a {
+    color: rgb(0, 0, 0, .8);
+}
+.microsoft-header nav {
+    color: rgb(0, 0, 0, .7);
+}
+.left li{
+    list-style: none;
+    display: inline-block;
+    padding: 1rem .5rem 1rem 0rem;
+    position: relative;
+    /* border: 3px solid; */
+}
+.left li a{
+    /* display: block; */
+    text-decoration: none;
+    padding: .9rem .7rem .9rem .7rem;
+    /* border: 3px solid; */
+}
+.left{
+    margin-left: .5rem;
+    display: inline-block;
+    /* border: 3px solid; */
+    width: 55rem;
+    text-align: left !important;
+}
+.microsoft365-bold{
+    /* font-family: 'Segoe UI Bold'; */
+    font-weight: 1000;
+    font-size: 1.13rem;
+    padding-left: 1rem !important;
+}
+.microsoft-logo {
+    display: inline-block;
+    border-right: 2.5px black solid;
+    padding-inline-end: 1.5rem;
+    height: 1.5rem;
+}
+.microsoft-logo a{
+    padding: .9rem .5rem .8rem 1.5rem;
+    /* border: 3px solid; */
+}
+.microsoft-logo img{
+   padding-bottom: .5rem;
+   width: 6.8rem;  
+   margin-left: -1rem;
+   vertical-align: middle;
+}
+.right li{
+    list-style: none;
+    display: inline-block;
+    padding: 1rem 1rem 1rem 1rem;
+}
+.right li a{
+    text-decoration: none;
+}
+.right{
+    display: inline-block; 
+    padding-left: 16rem;
+}
+.buy-now{
+    padding-left: 1.5rem !important;
+}
+#buy-now{
+    border: 1px black solid;
+    border-radius: .3rem;
+    padding: .35rem .52rem;
+    padding-top: .38rem;
+    font-weight: 900;
+}
+select{
+    border: none;
+    background-color: unset;
+    text-align: end;
+    cursor: pointer;
+    font-size: .82rem;
+    color: rgb(0, 0, 0, .8);
+    font-style: normal;
+    font-family: 'Segoe UI Regular';
+}
+.dropdown:active{
+    background-color: rgb(228, 227, 227);
+}
+.dropdown ul {
+    display: none;
+    position: absolute;
+    background-color: rgb(228, 227, 227);
+    margin-top: 1rem;
+    padding: 10px 15px;
+    z-index: 1;
+}
+.dropdown ul li{
+   width: max-content;
+    /* border: 3px solid; */
+}
+
+.dropdown:hover{
+    text-decoration: 2px underline black;
+    text-underline-offset: .5rem;
+}
+.dropdown:active ul{
+    display: block;
+}
+
+.dropdown:focus-within ul{
+    display: block;
+    color: #0067b8;
+}
+
+/* background-color: rgb(40, 99, 179); */
